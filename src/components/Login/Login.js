@@ -10,6 +10,10 @@ const Login = (props) => {
   const [enteredPassword, setEnteredPassword] = useState("");
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
+
+  useEffect(() => {
+    console.log("EFFECT RUNNING");
+  }, []);
   //useEffect for http to send less often
   useEffect(() => {
     const identifier = setTimeout(() => {
